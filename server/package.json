@@ -1,0 +1,11 @@
+{
+  "name": "chat-web-app-server",
+  "version": "1.0.0",
+  "description": "This server part of simple chat web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
