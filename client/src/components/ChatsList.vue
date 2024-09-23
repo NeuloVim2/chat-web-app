@@ -5,8 +5,15 @@ import SearchBar from '@/components/SearchBar.vue'
 
 <template>
   <section>
+    <span>Conversations</span>
     <SearchBar />
     <ul>
+      <ChatsListItem />
+      <ChatsListItem />
+      <ChatsListItem />
+      <ChatsListItem />
+      <ChatsListItem />
+      <ChatsListItem />
       <ChatsListItem />
       <ChatsListItem />
       <ChatsListItem />
@@ -16,7 +23,9 @@ import SearchBar from '@/components/SearchBar.vue'
 
 <style scoped>
 section {
-  border: 0.001rem solid white;
+  min-height: 100vh;
+  border: 0.00001rem solid white;
+  max-width: 20vw;
 }
 ul {
   list-style: none;
