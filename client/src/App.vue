@@ -6,8 +6,14 @@ import ConversationSection from './components/ConversationSection.vue'
 </script>
 
 <template>
-  <ChatsList />
-  <ConversationSection />
+  <div>
+    <ChatsList />
+    <ConversationSection />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+div {
+  display: flex;
+}
+</style>

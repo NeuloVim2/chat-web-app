@@ -10,6 +10,7 @@
 <style scoped>
 .search-bar-container {
   width: 100%;
+  padding: 8px 16px;
 }
 input.search-bar {
   width: 100%;

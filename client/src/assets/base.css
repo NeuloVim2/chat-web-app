@@ -6,6 +6,8 @@
   --on-surface-variant: #c2c7cf;
   --border-color: #000000;
   --surface-container-high: #272a2f;
+  --surface-container-lowest: #0B0F12;
+  
 
   /* font sizes */
   --body-medium: 0.3rem;
@@ -109,4 +111,14 @@ body {
   line-height: 1rem;
   text-align: right;
   letter-spacing: 0.03125rem;
+}
+
+.bubble-text {
+  background-color: var(--surface-container-high);
+  padding: 8px 16px;
+  border-radius: 20px 20px 20px 8px;
+}
+
+.message-container {
+  display: flex;
 }

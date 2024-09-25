@@ -22,14 +22,10 @@ import SearchBar from '@/components/SearchBar.vue'
 
 <style scoped>
 section {
-  /* overflow: scroll; */
-
   padding: 0px;
-
   height: 100vh;
-  border: 0.00001rem solid white;
-  min-width: 313px;
-  max-width: 26.083333333vw;
+
+  flex: 0 0 313px;
 }
 ul {
   display: flex;
