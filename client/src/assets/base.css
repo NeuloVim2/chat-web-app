@@ -3,19 +3,24 @@
   /* colors */
   --surface: #101418;
   --on-surface: #e0e2e8;
+  --on-surface-variant: #c2c7cf;
   --border-color: #000000;
+  --surface-container-high: #272a2f;
 
   /* font sizes */
   --body-medium: 0.3rem;
+  --body-large: 1rem;
+  --label-small: 0.6875rem;
+  --title-small: 0.875rem;
 }
 
 /* semantic color variables for this project */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --dark-surface: #101418;
     --dark-on-surface: #e0e2e8;
   }
-}
+} */
 
 *,
 *::before,
@@ -26,10 +31,24 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
 body {
   min-height: 100vh;
-  color: var(--dark-on-surface);
-  background: var(--dark-surface);
+  color: var(--on-surface);
+  background: var(--surface);
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -52,4 +71,42 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.title-small {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--small-title);
+  line-height: 20px;
+}
+
+.font-body-medium {
+  /* M3/body/medium */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.015625rem;
+}
+
+.placeholder-font-body-large::placeholder,
+.font-body-large {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--body-large);
+  line-height: 1.5rem;
+  letter-spacing: 0.03125rem;
+}
+
+.font-label-small {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--label-small);
+  line-height: 1rem;
+  text-align: right;
+  letter-spacing: 0.03125rem;
 }
