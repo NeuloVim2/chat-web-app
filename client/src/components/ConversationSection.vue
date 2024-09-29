@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import SendMessage from "@/components/SendMessage.vue";
-import ReplyMessage from "@/components/ReplyMessage.vue";
-import TopBar from "@/components/TopBar.vue";
-import MessageInput from "@/components/MessageInput.vue";
+import SendMessage from '@/components/SendMessage.vue'
+import ReplyMessage from '@/components/ReplyMessage.vue'
+import TopBar from '@/components/TopBar.vue'
+import MessageInput from '@/components/MessageInput.vue'
 </script>
 
 <template>
@@ -28,13 +28,14 @@ main.conversation {
   min-height: 100%;
 }
 
-.conversation>.container {
+.conversation > .container {
   padding: 0 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 42px;
   height: 100vh;
+  margin-bottom: 24px;
 }
 
 .content {
