@@ -6,14 +6,14 @@
   --on-surface-variant: #c2c7cf;
   --border-color: #000000;
   --surface-container-high: #272a2f;
-  --surface-container-lowest: #0B0F12;
-  
+  --surface-container-lowest: #0b0f12;
 
   /* font sizes */
   --body-medium: 0.3rem;
   --body-large: 1rem;
   --label-small: 0.6875rem;
   --title-small: 0.875rem;
+  --title-large: 1.375rem;
 }
 
 /* semantic color variables for this project */
@@ -83,6 +83,14 @@ body {
   line-height: 20px;
 }
 
+.title-large {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--title-large);
+  line-height: 28px;
+}
+
 .font-body-medium {
   /* M3/body/medium */
   font-family: 'Roboto';
@@ -122,3 +130,13 @@ body {
 .message-container {
   display: flex;
 }
+
+button:hover,
+button:focus {
+  stroke: var(--on-surface-variant);
+}
+
+/* #message-input-icon:focus,
+#message-input-icon:hover {
+  stroke: var(--on-surface-variant);
+} */
