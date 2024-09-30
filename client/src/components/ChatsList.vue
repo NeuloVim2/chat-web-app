@@ -15,7 +15,7 @@ const toggleFolded = () => {
     <IconFold @click="toggleFolded" />
   </div>
   <section :className="isFolded ? 'folded' : ''">
-    <ul>
+    <ul :className="isFolded ? 'invisible' : ''">
       <div class="chat-list-header">
         <h3 class="title-small">Conversations</h3>
         <IconFold @click="toggleFolded" />
@@ -53,9 +53,13 @@ section {
   transition: flex-basis 0.2s;
 
   &.folded {
+    /* display: block; */
     flex: 0 0 0;
-    width: 0;
-    margin: 0;
+    /* width: 0;
+    margin: 0; */
+  }
+  & ul.invisible {
+    display: none;
   }
 }
 ul {
