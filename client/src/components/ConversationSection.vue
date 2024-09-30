@@ -22,7 +22,6 @@ import MessageInput from '@/components/MessageInput.vue'
 
 <style scoped>
 main.conversation {
-  margin-left: 24px;
   flex: 1 1 100%;
   background-color: var(--surface-container-lowest);
   min-height: 100%;
